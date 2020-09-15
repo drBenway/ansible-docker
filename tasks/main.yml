@@ -58,6 +58,6 @@
     or docker_compose_current_version is version(docker_compose_version, '<')
 
 
-   - name: Install Docker Module for Python
-     pip:
-       name: docker
+- name: Install Docker Module for Python
+    pip:
+      name: docker
