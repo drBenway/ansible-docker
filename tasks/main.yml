@@ -15,8 +15,8 @@
   command: curl https://hub.docker.com
   
 - name: add docker GPG apt key
-  apt_key:
-    url: "{{ docker_apt_gpg_key }}"
+  ansible.builtin.apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
     state: present
 
 - name: add Docker Repository
