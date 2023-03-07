@@ -12,7 +12,7 @@
     update_cache: no
 
 - name: ping docker
-  command: curl https://download.docker.com/linux/ubuntu/gpg
+  command: curl -iv https://download.docker.com/linux/ubuntu/gpg
   
 - name: add docker GPG apt key
   ansible.builtin.apt_key:
