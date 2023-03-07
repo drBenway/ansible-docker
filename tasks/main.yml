@@ -11,6 +11,9 @@
     state: present
     update_cache: no
 
+- name: ping docker
+  command: curl https://hub.docker.com
+  
 - name: add docker GPG apt key
   apt_key:
     url: "{{ docker_apt_gpg_key }}"
